@@ -60,7 +60,6 @@ func batch() {
 		return
 	}
 	for i := 1; i < len(trs); i++ {
-
 		tds, err := trs[i].FindElements(selenium.ByCSSSelector, "td")
 		if err != nil {
 			log.Println("错误", err)
@@ -77,16 +76,4 @@ func batch() {
 
 	}
 
-}
-
-func Displayed(by, elementName string) func(selenium.WebDriver) (bool, error) {
-	return func(wd selenium.WebDriver) (ok bool, err error) {
-		var el selenium.WebElement
-		el, err = wd.FindElement(by, elementName)
-		if err != nil {
-			return
-		}
-		ok, err = el.IsDisplayed()
-		return
-	}
 }
