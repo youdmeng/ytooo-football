@@ -8,7 +8,7 @@ import (
 	"reflect"
 )
 
-//获取今日比赛信息 数据 今日 12:00 至次日 12:00
+// 获取今日比赛信息 数据 今日 12:00 至次日 12:00
 func GetGameInfo() {
 
 	opts := []selenium.ServiceOption{}
