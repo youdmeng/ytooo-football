@@ -1,9 +1,9 @@
 package club
 
 import (
-	"../../model"
-	"../../repository"
 	"fmt"
+	"football/src/model"
+	"football/src/repository"
 	"github.com/xormplus/xorm"
 	"log"
 )

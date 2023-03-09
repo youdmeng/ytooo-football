@@ -1,8 +1,6 @@
 package main
 
-import (
-	"./service"
-)
+import "football/src/service"
 
 func main() {
 

@@ -9,7 +9,7 @@ import (
 	"time"
 )
 
-//获取所有联赛 一天执行一次就可以
+// 获取所有联赛 一天执行一次就可以
 func GetLeagueInfo() {
 	var opts []selenium.ServiceOption
 	caps := selenium.Capabilities{

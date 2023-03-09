@@ -1,9 +1,9 @@
 package league
 
 import (
-	"../../model"
-	"../../repository"
 	"fmt"
+	"football/src/model"
+	"football/src/repository"
 	"github.com/xormplus/xorm"
 	"log"
 )
@@ -64,7 +64,7 @@ func Insert(league *model.League) int64 {
 	return row
 }
 
-//更新数据
+// 更新数据
 func Update(league *model.League, ywhere *[]model.Ywhere) bool {
 	session := engine.NewSession()
 	for i := 0; i < len(*ywhere); i++ {
